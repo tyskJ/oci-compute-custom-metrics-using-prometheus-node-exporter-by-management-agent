@@ -109,9 +109,9 @@ resource "oci_core_instance" "windows_instance" {
     user_data = data.cloudinit_config.this.rendered
   }
   defined_tags = {
-    format("%s.%s", oci_identity_tag_namespace.common.name, oci_identity_tag_default.key_env.tag_definition_name)                = "prd"
-    format("%s.%s", oci_identity_tag_namespace.common.name, oci_identity_tag_default.key_managedbyterraform.tag_definition_name) = "true"
-    "Compute.CloudAgent"                                                                                                         = "windows"
+    format("%s.%s", oci_identity_tag_namespace.common.name, oci_identity_tag.key_env.name)                = "prd"
+    format("%s.%s", oci_identity_tag_namespace.common.name, oci_identity_tag.key_managedbyterraform.name) = "true"
+    "Compute.CloudAgent"                                                                                  = "windows"
   }
   lifecycle {
     ignore_changes = [metadata]
