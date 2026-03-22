@@ -16,7 +16,7 @@ OCI Compute のカスタムメトリクスを Prometheus Node Exporter で取得
 
 作業環境 - ローカル -
 =====================================================================
-* macOS Tahoe ( v26.3.1 )
+* macOS Tahoe ( v26.3.1 (a) )
 * Visual Studio Code 1.112.0
 * Terraform v1.14.5
 * oci cli 3.71.0
